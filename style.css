@@ -1,39 +1,39 @@
-/* Custom Glow background effect */
+/* Custom Radial Glow & Vivid Gradient Backgrounds */
 .bg-radial-glow {
-    background: radial-gradient(circle at 50% 20%, rgba(14, 165, 233, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    background: radial-gradient(circle at 50% 20%, rgba(236, 72, 153, 0.25) 0%, rgba(139, 92, 246, 0.15) 45%, rgba(15, 23, 42, 0) 75%);
 }
 
-/* Service Card hover transitions */
+/* Service Card hover transitions with dynamic colorful glows */
 .service-card {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(56, 189, 248, 0.4);
-    box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.15);
+    transform: translateY(-6px);
+    border-color: rgba(236, 72, 153, 0.6);
+    box-shadow: 0 12px 35px -10px rgba(236, 72, 153, 0.3), 0 0 20px -5px rgba(139, 92, 246, 0.2);
 }
 
-/* Custom Webkit scrollbar for clean aesthetics */
+/* Colorful Smooth Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #090d16;
+    background: #0f172a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1e293b;
-    border-radius: 4px;
+    background: linear-gradient(180deg, #ec4899 0%, #8b5cf6 100%);
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #334155;
+    background: linear-gradient(180deg, #f43f5e 0%, #a855f7 100%);
 }
 
 /* Customize datepicker icon in dark mode */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1);
+    filter: invert(1) hue-rotate(280deg) saturate(3);
     cursor: pointer;
 }
